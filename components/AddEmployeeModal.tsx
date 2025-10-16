@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState } from 'react';
-import type { NewEmployee } from '../types';
-import { EmployeeStatus } from '../types';
+import type { NewEmployee } from '@/types';
+import { EmployeeStatus } from '@/types';
 import { XIcon } from './icons/XIcon';
 
 interface AddEmployeeModalProps {

@@ -1,5 +1,4 @@
-
-import React, 'react';
+import React from 'react';
 import { ChevronLeftIcon } from './icons/ChevronLeftIcon';
 import { ChevronRightIcon } from './icons/ChevronRightIcon';
 

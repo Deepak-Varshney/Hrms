@@ -1,5 +1,0 @@
-{
-  "name": "HRMS - Employee Management",
-  "description": "A Human Resource Management System for managing employee data with server-side simulated filtering, sorting, and pagination. This application provides a clean and modern interface for viewing and managing employee records.",
-  "requestFramePermissions": []
-}
