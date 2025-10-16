@@ -1,8 +1,11 @@
+'use client';
+
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import type { Employee, NewEmployee } from '../types';
-import { EmployeeStatus, AttendanceStatus } from '../types';
-import { fetchEmployees, createEmployee, updateEmployee, deleteEmployee, addAttendance } from '../services/employeeService';
-import { PAGE_SIZE } from '../constants';
+import type { Employee, NewEmployee } from '@/types';
+import { EmployeeStatus, AttendanceStatus } from '@/types';
+import { fetchEmployees, createEmployee, updateEmployee, deleteEmployee } from '@/actions/employeeActions';
+import { addAttendance } from '@/actions/attendanceActions';
+import { PAGE_SIZE } from '@/constants';
 import { Pagination } from './Pagination';
 import { SearchIcon } from './icons/SearchIcon';
 import { FilterXIcon } from './icons/FilterXIcon';
@@ -12,7 +15,7 @@ import { CalendarIcon } from './icons/CalendarIcon';
 import { AddEmployeeModal } from './AddEmployeeModal';
 import { EmployeeDetailsModal } from './EmployeeDetailsModal';
 import { AttendanceModal } from './AttendanceModal';
-import { toast } from '../lib/sonner';
+import { toast } from 'sonner';
 
 const useDebounce = <T,>(value: T, delay: number): T => {
     const [debouncedValue, setDebouncedValue] = useState<T>(value);

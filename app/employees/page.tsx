@@ -1,7 +1,6 @@
-import React from 'react';
-import { EmployeeTable } from '../components/EmployeeTable';
+import { EmployeeTable } from '@/components/EmployeeTable';
 
-const Employees: React.FC = () => {
+export default function EmployeesPage() {
   return (
     <div>
       <header className="mb-8">
@@ -15,6 +14,4 @@ const Employees: React.FC = () => {
       <EmployeeTable />
     </div>
   );
-};
-
-export default Employees;
+}
